@@ -1,0 +1,17 @@
+Attaching to tema1_tn1_1
+[36mtn1_1  |[0m "- interfetele de retea:"
+[36mtn1_1  |[0m 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+[36mtn1_1  |[0m     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+[36mtn1_1  |[0m     inet 127.0.0.1/8 scope host lo
+[36mtn1_1  |[0m        valid_lft forever preferred_lft forever
+[36mtn1_1  |[0m     inet6 ::1/128 scope host 
+[36mtn1_1  |[0m        valid_lft forever preferred_lft forever
+[36mtn1_1  |[0m 152: eth0@if153: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+[36mtn1_1  |[0m     link/ether 02:42:0e:29:34:7e brd ff:ff:ff:ff:ff:ff link-netnsid 0
+[36mtn1_1  |[0m     inet 14.41.52.126/30 scope global eth0
+[36mtn1_1  |[0m        valid_lft forever preferred_lft forever
+[36mtn1_1  |[0m     inet6 fe80::42:eff:fe29:347e/64 scope link tentative 
+[36mtn1_1  |[0m        valid_lft forever preferred_lft forever
+[36mtn1_1  |[0m "- gateway:"
+[36mtn1_1  |[0m default via 14.41.52.125 dev eth0 
+[36mtn1_1  |[0m 14.41.52.124/30 dev eth0 proto kernel scope link src 14.41.52.126 
