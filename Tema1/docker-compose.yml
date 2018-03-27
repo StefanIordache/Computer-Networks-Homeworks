@@ -8,10 +8,7 @@ services:
         tty: true
         networks:
             - tnet2
-        user: root
-        sysctls:
-            - net.ipv4.icmp_echo_ignore_all=1
-        command: tcpdump -nSt icmp
+        command: bash -c "tcpdump -nSt icmp"
     rt2:
         image: tema1:latest
         volumes:
@@ -19,7 +16,7 @@ services:
         tty: true
         networks:
             - tnet2
-        command: ping -s 4000 rt1
+        command: bash -c "ping -s 4000 rt1"
         depends_on:
             - rt1
     rt3:
@@ -29,7 +26,7 @@ services:
         tty: true
         networks:
             - tnet2
-        command: ping rt1
+        command: bash -c "ping rt1"
         depends_on:
             - rt1
         sysctls:
@@ -41,7 +38,7 @@ services:
         tty: true
         networks:
             - tnet2
-        command: ping -c 1 rt3
+        command: bash -c "ping -c 1 rt3"
         depends_on:
             - rt3
     tn1:
